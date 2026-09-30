@@ -28,7 +28,7 @@ Run the project's actual relevant tests, lint, and type checks for code changes,
 - Frontend tests: `npm test -- --run` (the existing `test` script is Vitest; `--run` makes this a bounded run).
 - Frontend build: `npm run build`.
 - Backend tests: `cd backend && pytest`, as documented in `AGENTS.md`.
-- The inspected `package.json` has no standalone type-check script, and its build script is `vite build`. Do not report an independent TypeScript check merely because a Vite build passed.
+- TypeScript: the existing `CLAUDE.md` documents `npx tsc --noEmit`. Use the installed local compiler without downloading packages, and report the exact configuration checked. The inspected `package.json` has no standalone type-check script and its build script is `vite build`; do not report an independent TypeScript check merely because a Vite build passed.
 - Choose checks for the changed frontend/backend scope. Resolve their dependencies without silently upgrading them, starting services, or fetching model weights. Existing deployment configuration does not prove these checks are required or passing remotely.
 
 ## Operational and data boundaries
