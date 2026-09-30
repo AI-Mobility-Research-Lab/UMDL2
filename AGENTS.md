@@ -52,3 +52,7 @@
   - Example: `MODEL_PATH=/models/best.pt PROCESSED_VIDEOS_DIR=/app/processed_videos uvicorn app.main:app`.
 - Keep CORS origins aligned with deployment domains.
 - Avoid committing large media; use `backend/processed_videos/` for outputs.
+
+## Pull request collaboration
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before making changes. It defines isolated branches/workspaces, preservation of WIP and nested repositories, actual verification reporting, review, and separate merge/deployment authorization. Retain all project-specific instructions above.
